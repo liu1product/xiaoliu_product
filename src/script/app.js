@@ -6,3 +6,4 @@ ReactDOM.render(
 	<Name />,
 	document.getElementById("root")
 )
+console.log("11111")
