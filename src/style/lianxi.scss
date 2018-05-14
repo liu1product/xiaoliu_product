@@ -1,0 +1,58 @@
+.m_comment{
+    h1{
+        font-size:0.16rem;
+    }
+    p{
+        font-size:0.12rem;
+        color:#666666;
+    }
+}
+.m-form{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    .formClass{
+        width:7.1rem;
+        height:auto;
+        padding:0 0.2rem;
+        overflow: hidden;
+        margin-top:0.2rem;
+        display: block;
+        label{
+            display: block;
+            width:100%;
+            margin-top:0.1rem;
+            font-size:0.15rem;
+            height:auto;
+            overflow: hidden;
+            span{
+                display: block;
+                width:0.5rem;
+                height:auto;
+                float:left;
+            }
+            .author_class{
+                display: block;
+                width:4.56rem;
+                height:0.5rem;
+                padding:0 0.2rem;
+                float:left;
+                border:0.01rem solid #666;
+            }
+            .sub_btn{
+                display: block;
+                width:4.96rem;
+                height:0.5rem;
+                float:left;
+                margin-left:0.5rem;
+                border:0.01rem solid #666; 
+            }
+            textarea{
+                display: block;
+                width:4.56rem;
+                height:2rem;
+                padding:0.2rem;
+            }
+        }
+    }
+}

@@ -6,12 +6,15 @@ var ExtractTextPlugin=require("extract-text-webpack-plugin");
 module.exports={
 //	entry:"./src/script/app.js",
 	entry:{
-		app:"./src/script/app.js"
+//		app:"./src/script/app.js"
+		"./scripts/rem":"./src/script/rem.js",
+		"./scripts/app":"./src/script/app.js"
 	},
 	output:{
 		path:__dirname+"/build",
 //		filename:"app.js"
-		filename:"[name]_[hash].js"
+//		filename:"[name]_[hash].js"
+		filename:"[name]_[chunkhash:8].js"
 	},
     
 	plugins: [
@@ -56,6 +59,12 @@ module.exports={
 			   exclude:/node_modules/,
 			   loader:"babel-loader"
 		    },
+		     //babel-loader,解析jsx文件
+//		    {
+//			   test:/\.jsx$/,
+//			   exclude:/node_modules/,
+//			   loader:"babel-loader"
+//		    },
 		    //css-loader,css打包
 //		    {
 //		     test:/\.css$/,
